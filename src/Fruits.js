@@ -1,6 +1,8 @@
 function Fruits(props) {
 return(
-  <h1></h1>
+  <div>
+    {props.fruits.map (f => <p key={f.id}>{f.fruitName}</p>)}
+  </div>
 )
 }
 
